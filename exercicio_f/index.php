@@ -1,13 +1,8 @@
 <?php 
 
-    $base = 30;
-    $altura = 20;
+    $base = readline("Digite o valor da base do triângulo: ");
+    $altura = readline("Digite o valor da altura do triângulo: ");
 
-    echo "A base é: $base";
-    echo "<br>";
-    echo "A altura é: $altura";
-    echo "<br>";
-    echo "<br>";
-
+    //Calculando e imprimindo valores
     $area = ($base * $altura)/ 2;
-    echo "A área do triângulo é: $area";
+    echo "A área do triângulo é: $area" .PHP_EOL;

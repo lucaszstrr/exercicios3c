@@ -1,10 +1,10 @@
 <?php
     
     //Notas
-    $nota1 = 300;
-    $nota2 = 100;
-    $nota3 = 720;
-    $nota4 = 400;
+    $nota1 = readline("Insira a primeira nota: ");
+    $nota2 = readline("Insira a segunda nota: ");
+    $nota3 = readline("Insira a terceira nota: ");
+    $nota4 = readline("Insira a quarta nota: ");
 
     //Pesos
     $peso1 = 1;
@@ -21,17 +21,7 @@
     //Calculando a Média
     $media = $somas / $pesos;
 
-    //Imprimindo valores
-    echo "A nota 1 é: $nota1";
-    echo "<br>";
-    echo "A nota 2 é: $nota2";
-    echo "<br>";
-    echo "A nota 3 é: $nota3";
-    echo "<br>";
-    echo "A nota 4 é: $nota4";
-    echo "<br>";
-    echo "<br>";
-    echo "A média ponderada é: $media";
+    echo "A média ponderada é: $media" .PHP_EOL;
 
     
     

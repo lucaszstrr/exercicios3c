@@ -1,29 +1,21 @@
 <?php
 
-    $base = 50;
-    $altura = 10;
-
-    echo "A base é: $base";
-    echo "<br>";
-    echo "A altura é: $altura";
-    echo "<br>";
-    echo "<br>";
+    $base = readline("Digite o valor da base do quadrilátero: ");
+    $altura = readline("Digite o valor da altura do quadrilátero: ");
 
     //Calculo do perímetro
     $perimetro = ($base * 2) + ($altura * 2);
 
-    echo "O perímetro do quadrilátero é de: $perimetro";
-    echo "<br>";
+    echo "O perímetro do quadrilátero é de: $perimetro" .PHP_EOL;
 
-    //Calculo da altura
+    //Calculo da area
     $area = $base * $altura;
 
-    echo "A área do quadrilátero é de: $area";
-    echo "<br>";
+    echo "A área do quadrilátero é de: $area".PHP_EOL;
+
 
     //Calculo da diagonal
     $calcDiagonal = ($base**2)+($altura**2);
     $diagonal = sqrt($calcDiagonal);
 
-    echo "A diagonal do quadrilátero é de: $diagonal";
-    echo "<br>";
+    echo "A diagonal do quadrilátero é de: $diagonal".PHP_EOL;

@@ -1,9 +1,9 @@
 <?php
 
     //Dados
-    $salarioFixo = 2000;
-    $carrosVendidos = 5;
-    $cadaVenda = 500;
+    $salarioFixo = readline("Digite o valor do salário fixo: R$");
+    $carrosVendidos = readline("Digite quantos carros foram vendidos: ");
+    $cadaVenda = readline("Digite o valor de comissão por venda: R$");
     $valorTotalVendas = $cadaVenda * $carrosVendidos;
 
     //Calculo do bônus
@@ -14,14 +14,5 @@
     $salarioFinal = $salarioFixo + $bonusVendas;
 
     //Impressões
-    echo "O salário fixo é: R$$salarioFixo";
-    echo "<br>";
-    echo "O vendedor vendeu $carrosVendidos carros";
-    echo "<br>";
-    echo "A comissão por venda é de R$$cadaVenda por carro";
-    echo "<br>";
-    echo "O valor total de comissões de venda com o bônus de 5% é de R$$bonusVendas";
-    echo "<br>";
-    echo "<br>";
-    echo "O salário final é R$$salarioFinal";
+    echo "O salário final é R$$salarioFinal" .PHP_EOL;
     
