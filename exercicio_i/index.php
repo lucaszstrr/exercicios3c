@@ -1,16 +1,19 @@
 <?php
 
+    //Dados
     $salarioFixo = 2000;
     $carrosVendidos = 5;
     $cadaVenda = 500;
     $valorTotalVendas = $cadaVenda * $carrosVendidos;
 
+    //Calculo do bônus
     $bonus = ($valorTotalVendas/100) * 5;
     $bonusVendas = $valorTotalVendas + $bonus;
 
+    //Calculo salário final
     $salarioFinal = $salarioFixo + $bonusVendas;
 
-
+    //Impressões
     echo "O salário fixo é: R$$salarioFixo";
     echo "<br>";
     echo "O vendedor vendeu $carrosVendidos carros";
